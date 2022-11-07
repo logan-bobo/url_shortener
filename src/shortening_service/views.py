@@ -1,9 +1,10 @@
-from django.shortcuts import HttpResponse, HttpResponseRedirect, get_object_or_404
+from django.shortcuts import HttpResponse, HttpResponseRedirect, get_object_or_404, render
+from django.template import loader
 from .models import Link
 
 
 def index(request):
-    return HttpResponse('THIS IS THE MAIN PAGE')
+    return render(request, 'shortening_service/index.html')
 
 
 def redirect(request, uuid: str):
