@@ -59,6 +59,12 @@
     #button-24:active {
         opacity: .5;
     }
+
+    #source_link {
+        border-radius: 20px;
+        background: transparent;
+        height: 30px;
+    }
 </style>
 </head>
 <body>
@@ -71,7 +77,7 @@
         </div>
         <div>
             <label>Source - </label>
-            <input type="text">
+            <input id="source_link" type="text">
             <button id="generate" role="generate" type="button">Generate!</button>
         </div>
         <p>You will then see your generated link below</p>
